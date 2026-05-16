@@ -1,0 +1,26 @@
+{
+  "name": "playwrightauto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "OneTest": "npx playwright test Endtoenndflow.spec.js",
+    "RunAllTest": "npx playwright test ",
+    "RunOnspecificconfig": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.5",
+    "@cucumber/cucumber": "^12.8.3",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.3",
+    "allure-playwright": "^3.5.0"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
