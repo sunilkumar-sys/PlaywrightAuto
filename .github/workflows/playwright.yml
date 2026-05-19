@@ -19,7 +19,7 @@ jobs:
       uses: azure/login@v3
       with:
         creds: ${{ secrets.AZURE_SECRET }}
-    - name: Run Playwright tests from azure evn
+    - name: Run Playwright tests from azure evns
       env:
         PLAYWRIGHT_SERVICE_URL : ${{vars.PLAYWRIGHT_SERVICE_URL }}
       run:  npx playwright test --config=playwright.service.config.js --workers=1
