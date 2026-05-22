@@ -13,6 +13,7 @@ export class Cartpage {
 
     }
     async cartpageverification() {
+        await this.page.waitForLoadState('networkidle')
         await this.continueshopping.waitFor();
          const bool = await this.continueshopping.isVisible();
         expect(bool).toBeTruthy();
