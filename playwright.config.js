@@ -10,6 +10,9 @@ export default defineConfig({
   testDir: './tests',
 
   //reporter: 'html',
+  reporter: [
+    ['html', { outputFolder: 'playwright-report', open: 'never' }]
+  ],
   timeout: 60 * 1000,
 
  use: {
