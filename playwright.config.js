@@ -9,6 +9,8 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
 
+ reporter: 'html',
+  
   //reporter: 'html',
   timeout: 60 * 1000,
 
