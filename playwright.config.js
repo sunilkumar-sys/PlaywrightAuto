@@ -11,6 +11,7 @@ export default defineConfig({
 
  reporter: 'html',
   
+  //reporter: 'html',
   timeout: 60 * 1000,
 
  use: {
