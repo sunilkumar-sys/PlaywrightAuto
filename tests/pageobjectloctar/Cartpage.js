@@ -15,11 +15,15 @@ export class Cartpage {
     async cartpageverification() {
         await this.page.waitForLoadState('networkidle')
         await this.continueshopping.waitFor();
-         const bool = await this.continueshopping.isVisible();
-        expect(bool).toBeTruthy();
-         expect(await this.buynow.isVisible()).toBeTruthy();
-         expect(await this.delete.isVisible()).toBeTruthy();
-         expect(await this.checkout.isVisible()).toBeTruthy();
+        await (this.continueshopping).isVisible();
+
+         await expect(this.buynow).toBeVisible();
+     await expect(this.delete).toBeVisible();
+     await expect(this.checkout).toBeVisible();
+       // expect(bool).toBeTruthy();
+        // expect(await this.buynow.isVisible()).toBeTruthy();
+         //expect(await this.delete.isVisible()).toBeTruthy();
+         //expect(await this.checkout.isVisible()).toBeTruthy();
 
 
     }
