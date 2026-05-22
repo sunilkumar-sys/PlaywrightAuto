@@ -1,6 +1,6 @@
 export class LoginPage{
     constructor(page){
-        //const
+        //constsss
         this.page=page;
         this.UserName=page.locator("#userEmail");
         this.PassWord=page.locator("#userPassword");
